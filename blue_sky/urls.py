@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 urlpatterns = [
+    #path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
+    #path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
+    #path('land/', include('land.urls')),
+
+    #path('signup/', views.SignUp.as_view(), name='signup'),
+
+    #path('', include('land.urls')),
+    path('', views.index, name='index'),
 ]
