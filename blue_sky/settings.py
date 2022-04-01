@@ -89,7 +89,7 @@ DATABASES = {
         'USER': env('User'),
         'PASSWORD': env('Password'),
         'PORT': 5432,
-        #'Host' : env('Host'),
+        'HOST' : env('Host'),
         #'URI' : env('URI'),
         #'Heroku CLI' : env('Heroku CLI'),
     }
